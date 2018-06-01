@@ -1,0 +1,63 @@
+%YAML:1.0
+
+#camera calibration 
+
+model_type: PINHOLE
+camera_name: camera
+image_width: 1280
+image_height: 720
+distortion_parameters:
+   k1: -0.05620386
+   k2: -0.01322927
+   p1: -0.00034181
+   p2: 0.00058843
+projection_parameters:
+   fx: 793.88823403
+   fy: 792.52058410
+   cx: 604.36116913
+   cy: 374.73307786
+
+#camera calibration
+
+#model_type: SCARAMUZZA
+#image_width: 1280
+#image_height: 720
+#poly_parameters:
+#  p0: -3.097371e+02
+#  p1: 0.000000e+00
+#  p2: 8.084502e-04
+#  p3: -1.309824e-07
+#  p4: 4.541922e-10
+#inv_poly_parameters:
+#  p0: 590.153133
+#  p1: 495.608777
+#  p2: 101.351522
+#  p3: 24.831958
+#  p4: 33.859140
+#  p5: 35.569197
+#  p6: 14.851065
+#  p7: 2.312190
+#affine_parameters:
+#  ac: 0.998666
+#  ad: -0.000055
+#  ae: -0.000183
+#  cx: 646.831259
+#  cy: 352.727681
+
+
+#image path
+image_path: /home/jianc/dataset/vio/imgdir/
+imu_path: /home/jianc/dataset/listdir/imulist_radmin.txt
+
+#feature traker paprameters
+max_cnt: 120            # max feature number in feature tracking
+min_dist: 30            # min distance between two features 
+freq: 10                # frequence (Hz) of publish tracking result. At least 10Hz for good estimation. If set 0, the frequence will be same as raw image 
+F_threshold: 1.0        # ransac threshold (pixel)
+show_track: 1           # publish tracking image as topic
+equalize: 0             # if image is too dark or light, trun on equalize to find enough features
+fisheye: 0              # if using fisheye, trun on it. A circle mask will be loaded to remove edge noisy points
+#fisheyepath: /home/jianc/my_slam/config/fisheye_mask.jpg
+start: 700
+end: 4500
+#cube: 1

@@ -12,8 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Calibration.dir/src/sparse_graph/Transform.cc.o"
   "CMakeFiles/Calibration.dir/src/gpl/gpl.cc.o"
   "CMakeFiles/Calibration.dir/src/gpl/EigenQuaternionParameterization.cc.o"
-  "devel/lib/camera_model/Calibration.pdb"
-  "devel/lib/camera_model/Calibration"
+  "../bin/Calibration.pdb"
+  "../bin/Calibration"
 )
 
 # Per-language clean rules from dependency scanning.

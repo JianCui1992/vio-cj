@@ -11,8 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/camera_model.dir/src/sparse_graph/Transform.cc.o"
   "CMakeFiles/camera_model.dir/src/gpl/gpl.cc.o"
   "CMakeFiles/camera_model.dir/src/gpl/EigenQuaternionParameterization.cc.o"
-  "devel/lib/libcamera_model.pdb"
-  "devel/lib/libcamera_model.so"
+  "../lib/libcamera_model.pdb"
+  "../lib/libcamera_model.so"
 )
 
 # Per-language clean rules from dependency scanning.

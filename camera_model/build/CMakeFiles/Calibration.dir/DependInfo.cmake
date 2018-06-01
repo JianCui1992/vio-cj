@@ -26,19 +26,16 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "GFLAGS_DLL_DEFINE_FLAG="
   "GFLAGS_IS_A_DLL=0"
   "GOOGLE_GLOG_DLL_DECL="
-  "ROSCONSOLE_BACKEND_LOG4CXX"
-  "ROS_PACKAGE_NAME=\"camera_model\""
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/include"
-  "/usr/local/include/eigen3"
-  "/opt/ros/kinetic/include"
-  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "../"
   "../include"
+  "/usr/local/include/eigen3"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
+  "/usr/local/include"
   )
 
 # Targets to which this target links.
